@@ -44,7 +44,7 @@ Bicycle Repairs Test
     #Create Bike Record
     LaunchApp        Bicycles
     ClickText        New
-    TypeText         *Bicycle Name               Test Road Bike
+    TypeText         *Bicycle Name               Test Bike
     PickList         Type                        Road
     TypeText         Price                       600
     ClickText        Owner                       partial_match=False
@@ -95,8 +95,8 @@ Bicycle Repairs Test
     UseModal         Off
     ClickText        Close                       partial_match=False
     LaunchApp        Bicycles
-    VerifyText       Test Road Bike
-    ClickText        Test Road Bike
+    VerifyText       Test Bike
+    ClickText        Test Bike
     ClickText        Show more actions
     ClickText        Delete
     UseModal         On
