@@ -40,9 +40,9 @@ Bicycle Repairs Test
     TypeText         Phone                       1112223333
     TypeText         Mobile                      4445556666
     TypeText         Email                       test@test.com
-    ClickText        Save                        partial_match=False
+    ClickText        Save                        partial_match=False time    delay=2
     #Create Bike Record
-    LaunchApp        Bicycles
+    LaunchApp        Bicycles                    delay=2
     ClickText        New
     TypeText         *Bicycle Name               Test Road Bike
     PickList         Type                        Road
@@ -51,7 +51,7 @@ Bicycle Repairs Test
     TypeText         Test         
     VerifyText       Test Contact Test
     ClickText        Test Contact Test
-    ClickText        Save                        partial_match=False
+    ClickText        Save                        partial_match=False 
     #Create Repairs records
     ClickText        Related
     ClickText        New                         partial_match=False anchor=Repairs
