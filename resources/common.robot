@@ -25,7 +25,7 @@ End suite
 Login
     [Documentation]             Login to Salesforce instance
     GoTo                        ${login_url}
-    TypeText                    Username                    ${username}                 delay=1
+    TypeText                    Username                    ${username}                 delay=3
     TypeText                    Password                    ${password}
     ClickText                   Log In
   ${isMFA}=                   IsText                      Verify Your Identity        #Determines MFA is prompted
@@ -99,13 +99,4 @@ DeleteLeads
     VerifyNoText                Undo
     ClickText                   Leads                       partial_match=False
 
-DeleteBikes
-  [Documentation]             RunBlock to remove all data until it doesn't exist anymore
-    ClickText                   ${data}
-    ClickText                   Delete
-    VerifyText                  Are you sure you want to delete this Bike?
-    ClickText                   Delete                      2
-    VerifyText                  Undo
-    VerifyNoText                Undo
-    ClickText                   Bikes                       partial_match=False
 
