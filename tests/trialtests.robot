@@ -33,7 +33,7 @@ Bicycle Repairs Test
     ClickText        New Account
     UseModal         On
     TypeText         Account Name*               Test Account
-    ClickText        Customer
+    Picklist         Type                         Customer
     PickList         Industry                    Recreation
     ClickText        Save                        anchor=Account Information
     UseModal         Off
@@ -48,8 +48,9 @@ Bicycle Repairs Test
     PickList         Type                        Road
     TypeText         Price                       600
     ClickText        Owner                       partial_match=False
-    TypeText         Test
-    ClickText        Test Contact
+    TypeText         Test         
+    VerifyText       Test Contact Test
+    ClickText        Test Contact Test
     ClickText        Save                        partial_match=False
     #Create Repairs records
     ClickText        Related
