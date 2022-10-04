@@ -33,7 +33,6 @@ Bicycle Repairs Test
     ClickText        New Account
     UseModal         On
     TypeText         Account Name*               Test Account
-    VerifyField      Type
     PickList         Type                        Customer
     PickList         Industry                    Recreation
     ClickText        Save                        anchor=Account Information
