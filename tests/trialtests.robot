@@ -45,7 +45,7 @@ Bicycle Repairs Test
 
 
     LaunchApp        Contacts
-    ClickText        New
+    ClickText        New                       partial_match=False
     TypeText         First Name                  Test
     TypeText         Last Name                   Contact
     ClickText        *Account Name
@@ -61,8 +61,7 @@ Bicycle Repairs Test
     TypeText         Email                       test@test.com
     TypeText         Description                 test data record
     ClickText        Save                        partial_match=False
-    ClickText        New                         anchor=3 partial_match=False
-    VerifyText       Bicycles
+
     ClickText        New
     TypeText         *Bicycle Name               Test Bicycle
     PickList         Type                        Road
