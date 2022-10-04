@@ -40,7 +40,7 @@ Bicycle Repairs Test
     PickList         Industry                    Recreation
     ClickText        Save                        anchor=Account Information
     UseModal         Off
-    ClickText        Save                        partial_match=False time
+    ClickText        Save                        partial_match=False
     #Create Bike Record
     LaunchApp        Bicycles
     ClickText        New
