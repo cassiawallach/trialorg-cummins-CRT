@@ -27,31 +27,31 @@ Bicycle Repairs Test
     #create new contact for owner (and account)
     LaunchApp        Contacts
     ClickText        New
-    TypeText         First Name                  Test Contact
-    TypeText         Last Name                   Test
+    TypeText         First Name                  Test
+    TypeText         Last Name                   Contact
+    TypeText         Phone                       1112223333
+    TypeText         Mobile                      4445556666
+    TypeText         Email                       test@test.com
     ClickText        *Account Name
     ClickText        New Account
     UseModal         On
     TypeText         Account Name*               Test Account
-    Picklist         Type                         Customer
+    Picklist         Type                        Customer
     PickList         Industry                    Recreation
     ClickText        Save                        anchor=Account Information
     UseModal         Off
-    TypeText         Phone                       1112223333
-    TypeText         Mobile                      4445556666
-    TypeText         Email                       test@test.com
-    ClickText        Save                        partial_match=False time    delay=2
+    ClickText        Save                        partial_match=False time
     #Create Bike Record
-    LaunchApp        Bicycles                    delay=2
+    LaunchApp        Bicycles
     ClickText        New
     TypeText         *Bicycle Name               Test Road Bike
     PickList         Type                        Road
     TypeText         Price                       600
     ClickText        Owner                       partial_match=False
-    TypeText         Test         
-    VerifyText       Test Contact Test
-    ClickText        Test Contact Test
-    ClickText        Save                        partial_match=False 
+    TypeText         Owner                       Test
+    VerifyText       Test Contact
+    ClickText        Test Contact
+    ClickText        Save                        partial_match=False
     #Create Repairs records
     ClickText        Related
     ClickText        New                         partial_match=False anchor=Repairs
