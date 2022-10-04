@@ -24,27 +24,34 @@ Bicycle Object Test
 
 Bicycle Repairs Test
     Home
+    #create new contact for owner (and account)
+    LaunchApp        Contacts
+    ClickText        New
+    TypeText         First Name                  Test Contact
+    TypeText         Last Name                   Test
+    ClickText        *Account Name
+    ClickText        New Account
+    UseModal         On
+    TypeText         Account Name*               Test Account
+    ClickText        Customer
+    PickList         Industry                    Recreation
+    ClickText        Save                        anchor=Account Information
+    UseModal         Off
+    TypeText         Phone                       1112223333
+    TypeText         Mobile                      4445556666
+    TypeText         Email                       test@test.com
+    ClickText        Save                        partial_match=False
+    #Create Bike Record
     LaunchApp        Bicycles
     ClickText        New
     TypeText         *Bicycle Name               Test Road Bike
     PickList         Type                        Road
     TypeText         Price                       600
-#create new contact for owner (and account)
     ClickText        Owner                       partial_match=False
-    ClickText        New Contact
-    UseModal         On
-    TypeText         First Name                  Test Contact
-    TypeText         Last Name                   Test
-    ClickText        Account Name*
-    ClickText        New Account
-    TypeText         Account Name*               Test Account
-    ClickText        Save                        anchor=Account Information
-    UseModal         Off
-    TypeText         Phone                       4444444444
-    TypeText         Email                       test@test.com
-    ClickText        Save                        anchor=Contact Information
+    TypeText         Test
+    ClickText        Test Contact
     ClickText        Save                        partial_match=False
- #Create Repairs records
+    #Create Repairs records
     ClickText        Related
     ClickText        New                         partial_match=False anchor=Repairs
     UseModal         On
